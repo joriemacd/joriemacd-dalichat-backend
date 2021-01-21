@@ -1,10 +1,10 @@
 /* eslint-disable consistent-return */
-import express from 'express';
+import { Router } from 'express';
 
 import { userController } from '../controllers';
 import { requireAuth, requireSignin } from '../authentication';
 
-const router = express();
+const router = Router();
 
 router.route('/signup')
   .post(async (req, res, next) => {

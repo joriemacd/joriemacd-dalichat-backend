@@ -1,9 +1,9 @@
 // Reference: https://github.com/Automattic/mongoose/issues/1377#issuecomment-15911192
 
-import express from 'express';
+import { Router } from 'express';
 import { searchController } from '../controllers';
 
-const router = express();
+const router = Router();
 
 router.route('/posts')
   .get(async (req, res, next) => {

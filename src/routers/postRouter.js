@@ -1,12 +1,12 @@
 // @ts-check
-import express from 'express';
+import { Router } from 'express';
 
 import { postController } from '../controllers';
 
 import { requireAuth } from '../authentication';
-import { getSuccessfulDeletionMessage } from '../helpers/constants';
+import { getSuccessfulDeletionMessage } from '../utils/constants';
 
-const router = express();
+const router = Router();
 
 // find and return all resources
 router.route('/')

@@ -22,6 +22,6 @@ ResourceSchema.post('validate', function (_doc, next) {
   next();
 });
 
-const ResourceModel = mongoose.model('Post', ResourceSchema);
+const PostModel = mongoose.model('Post', ResourceSchema);
 
-export default ResourceModel;
+export default PostModel;

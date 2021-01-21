@@ -1,11 +1,11 @@
-import express from 'express';
+import { Router } from 'express';
 
 import { userController } from '../controllers';
 
 import { requireAuth } from '../authentication';
-import { getSuccessfulDeletionMessage } from '../helpers/constants';
+import { getSuccessfulDeletionMessage } from '../utils/constants';
 
-const router = express();
+const router = Router();
 
 router.use(requireAuth);
 
