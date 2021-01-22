@@ -30,7 +30,7 @@ const UserSchema = new Schema({
   },
 });
 
-const saltRounds = 10;
+const saltRounds = process.env.SALT_ROUNDS;
 
 // Add a preprocessing function to the user's save function to hash password before saving
 UserSchema.pre('save', function (next) {
