@@ -8,7 +8,7 @@ import {
   authRouter, userRouter, postRouter, searchRouter,
 } from './routers';
 
-import * as constants from './helpers/constants';
+import * as constants from './utils/constants';
 
 // Load config vars from ".env" files
 require('dotenv').config();
